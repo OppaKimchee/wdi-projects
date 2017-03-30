@@ -1,0 +1,49 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+body {
+  background-color: black;
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/0kjHIH6/old-video-game-arcade-interface-on-a-black-background_4y7gpoell__S0000.jpg);
+}
+h1 {
+  text-align: center;
+  color: white;
+  position:absolute;
+  bottom: 150px
+}
+table {
+  border: 10px solid #999;
+  margin: 100px auto;
+  border-radius : 25px;
+  border-color: white;
+  color: white;
+}
+td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #999;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+tr {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #999;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+button {
+  width: 190px;
+  height: 51px;
+  display:table;
+  margin: 0 auto;
+  position: relative;
+  bottom: 49px;
+  border-radius: 25px
+}

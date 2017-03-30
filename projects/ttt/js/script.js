@@ -3,7 +3,6 @@
 var p1;
 var p2;
 var turn;
-var playerTurn;
 var currentPl = '';
 var winner = false;
 var xO = document.getElementById('xo');
@@ -22,13 +21,11 @@ var resetBtn = document.getElementById('button');
 
 
 /*-- Function Definitions --*/
-
 function start(){
   clearBoard();
   //reset button
   resetBtn.addEventListener('click', clearBoard);
   currentPlayer(turn);
-  document.getElementById('full').addEventListener('click',boardFunc);
 }
 
 //clean board or reset the board by initializing everything to defaults
@@ -38,8 +35,8 @@ function clearBoard(){
   turn = 1;
   winner = false;
   currentPl = '';
+
   xO.addEventListener('click',chooseSymbol);
-  console.log(document.getElementById('full'))
   display("Player 1 choose x or o to start");
 }//clearBoard()
 
@@ -56,6 +53,7 @@ function chooseSymbol(event){
    display("P1 = O P2 = X");
   }
   xO.removeEventListener('click', chooseSymbol);
+  document.getElementById('full').addEventListener('click',boardFunc);
 }//chooseSymbol()
 
 //display cell
@@ -66,6 +64,7 @@ function display(message){
 //choosing current player by turn
 function currentPlayer(currentPlayer){
   currentPl = currentPlayer%2 === 0 ? p2 : p1;
+  turn++;
   return currentPl;
 }//currentPlayer()
 
@@ -79,4 +78,8 @@ function boardFunc(event){
     event.target.textContent = p2;
   }
 }//boardFunc()
-start();
+while(winner === false){
+  start();
+  winner = true;
+}
+
