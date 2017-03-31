@@ -11,20 +11,25 @@ h3 {
   color: white;
 }
 
-#cpu {
+#house {
   height: 300px;
   width: 50%;
   background-color: blue;
-  position: absolute;
-  top: 88px;
+  position:absolute;
+  top: 0;
   right: 0;
   color: white;
 }
 
-#p1 {
+#player {
   height: 300px;
   width: 50%;
   background-color: red;
   margin: 0 auto;
   color: white;
+}
+
+.container{
+  position:static;
+  border:1px solid red;
 }
