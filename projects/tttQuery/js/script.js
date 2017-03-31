@@ -39,7 +39,8 @@ function clearBoard(){
   $('td.input').text("");
   $xO.on('click',chooseSymbol);
   $('body').css({'background':"url(http://www.pixelstalk.net/wp-content/uploads/2016/10/Invader-Arcade-Classic-Space-Invaders-Wallpaper.jpg)","background-size":"contain","background-repeat":"no-repeat","background-position":" 225px bottom","background-color":"black"});
-  $('table,tr,td').css({"color":"white","border-color":"white"});
+  $('table').css({"color":"white","border":"10px solid white"});
+  $('tr,td').css({"color":"white","border":"1px solid white"})
   display("Player 1 choose x or o to start");
 }//clearBoard()
 
