@@ -1,6 +1,6 @@
 #Black Jack
 ----
-start
+#start
 ----
 1. create deck
  - 52 cards associated to suits and value
@@ -22,7 +22,18 @@ start
 5. deal first card to p2
  - delete card from deck so duplicates don't appear when dealt
 6. deal second card to p1
-win conditions
+
+----
+#bets
+---
+1. player starts with $1000 in bank
+1. when hand is dealt, player will be promted to place bets, minimum: 10 max: 100
+2. 4 buttons, -100, -10, +10, +100
+3. put bet amount into center of table display
+4. track amount of bet in pool
+5. if lose then subtract pool from bank
+6. if win then add pool*2 to bank
+#win conditions
 ----
  - win() {check if 21, check if p2 has 21
  - if not then winner!} 
@@ -35,5 +46,4 @@ win conditions
  - if no doubles, then alernate dealing cards to p1 and p2 till both are close to 21 or 21 or bust.
  - check for winner/loser during deals
  
-----
- place bets
+
